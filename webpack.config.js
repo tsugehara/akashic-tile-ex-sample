@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
 	mode: process.env.NODE_ENV == null ? "development" : process.env.NODE_ENV,
+	devtool: false,
 	entry: {
 		bundle: path.resolve(__dirname, "src", "main.ts"),
 	},

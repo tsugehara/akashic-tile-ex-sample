@@ -14,9 +14,26 @@
 			"width": 102,
 			"height": 34,
 			"path": "assets/parts/buttons.png"
+		},
+		"assets/map/[A]Grass1-Grass2_pipo.png": {
+			"type": "image",
+			"path": "assets/map/[A]Grass1-Grass2_pipo.png",
+			"width": 64,
+			"height": 160
+		},
+		"assets/map/[Base]BaseChip_pipo.png": {
+			"type": "image",
+			"path": "assets/map/[Base]BaseChip_pipo.png",
+			"width": 256,
+			"height": 7968
+		},
+		"assets/map/[A]Water2_pipo.png": {
+			"type": "image",
+			"path": "assets/map/[A]Water2_pipo.png",
+			"width": 256,
+			"height": 160
 		}
 	},
-	"moduleMainScripts": {},
 	"environment": {
 		"sandbox-runtime": "3",
 		"akashic-runtime": {
