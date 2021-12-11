@@ -1,0 +1,43 @@
+{
+	"name": "akashic-template",
+	"version": "0.1.1",
+	"description": "",
+	"scripts": {
+		"clean": "rimraf ./script",
+		"watch": "webpack -w",
+		"build": "webpack",
+		"build:production": "NODE_ENV=production webpack",
+		"update": "akashic-cli-scan asset && akashic-cli-scan globalScripts",
+		"preexport:content": "npm run build:production",
+		"prettier:check": "prettier --check .",
+		"prettier:write": "prettier --write .",
+		"lint": "npm run prettier:check",
+		"lint:fix": "npm run prettier:write",
+		"start": "akashic-sandbox .",
+		"serve": "akashic-cli-serve --no-open-browser",
+		"export:zip": "rimraf game.zip && akashic-cli-export-zip -o game.zip -s",
+		"export:html": "rimraf game && akashic-cli-export-html -o game",
+		"export:content": "rimraf game.zip && akashic-cli-export-html -o ./game.zip --atsumaru",
+		"test": "npm run lint && jest"
+	},
+	"author": "Shinonomekazan Co., Ltd.",
+	"license": "MIT",
+	"devDependencies": {
+		"@akashic/akashic-cli-export": "^1.2.11",
+		"@akashic/akashic-cli-scan": "^0.10.7",
+		"@akashic/akashic-cli-serve": "^1.9.14",
+		"@akashic/akashic-engine": "^3.1.0",
+		"@akashic/akashic-sandbox": "^0.17.29",
+		"@akashic/headless-akashic": "^2.1.0",
+		"@types/jest": "26.0.23",
+		"@types/node": "16.0.0",
+		"jest": "^27.2.5",
+		"prettier": "^2.4.1",
+		"rimraf": "^3.0.2",
+		"ts-jest": "^27.0.5",
+		"ts-loader": "^9.2.6",
+		"typescript": "^4.4.4",
+		"webpack": "^5.42.0",
+		"webpack-cli": "^4.7.2"
+	}
+}

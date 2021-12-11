@@ -1,0 +1,28 @@
+{
+	"width": 480,
+	"height": 480,
+	"fps": 30,
+	"main": "./script/bundle.js",
+	"assets": {
+		"bundle": {
+			"type": "script",
+			"path": "script/bundle.js",
+			"global": true
+		},
+		"asset:c0a1f9": {
+			"type": "image",
+			"width": 102,
+			"height": 34,
+			"path": "assets/parts/buttons.png"
+		}
+	},
+	"moduleMainScripts": {},
+	"environment": {
+		"sandbox-runtime": "3",
+		"akashic-runtime": {
+			"version": "~3.0.19",
+			"flavor": "-canvas"
+		}
+	},
+	"globalScripts": []
+}
